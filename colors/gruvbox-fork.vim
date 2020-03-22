@@ -1300,6 +1300,7 @@ hi! link typescriptGlobal GruvboxBlue
 hi! link typescriptCastKeyword GruvboxPurpleItalic
 hi! link typescriptStatementKeyword GruvboxPurpleBold
 hi! link typescriptTernaryOp GruvboxPurpleBold
+hi! link typescriptBinaryOp GruvboxPurpleBold
 
 
 " }}}
