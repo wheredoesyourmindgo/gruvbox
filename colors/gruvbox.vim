@@ -422,8 +422,11 @@ endfunction
 
 " memoize common hi groups
 call s:HL('GruvboxFg0', s:fg0)
+call s:HL('GruvboxFg0Bold', s:fg0, s:none, s:bold)
 call s:HL('GruvboxFg1', s:fg1)
+call s:HL('GruvboxFg1Bold', s:fg1, s:none, s:bold)
 call s:HL('GruvboxFg2', s:fg2)
+call s:HL('GruvboxFg2Italic', s:fg2, s:none, s:italic)
 call s:HL('GruvboxFg3', s:fg3)
 call s:HL('GruvboxFg4', s:fg4)
 call s:HL('GruvboxGray', s:gray)
@@ -442,10 +445,13 @@ call s:HL('GruvboxYellowBold', s:yellow, s:none, s:bold)
 call s:HL('GruvboxBlue', s:blue)
 call s:HL('GruvboxBlueBold', s:blue, s:none, s:bold)
 call s:HL('GruvboxPurple', s:purple)
+call s:HL('GruvboxPurpleItalic', s:purple, s:none, s:italic)
 call s:HL('GruvboxPurpleBold', s:purple, s:none, s:bold)
 call s:HL('GruvboxAqua', s:aqua)
+call s:HL('GruvboxAquaItalic', s:aqua, s:none, s:italic)
 call s:HL('GruvboxAquaBold', s:aqua, s:none, s:bold)
 call s:HL('GruvboxOrange', s:orange)
+call s:HL('GruvboxOrangeItalic', s:orange, s:none, s:italic)
 call s:HL('GruvboxOrangeBold', s:orange, s:none, s:bold)
 
 call s:HL('GruvboxRedSign', s:red, s:sign_column, s:invert_signs)
@@ -607,7 +613,8 @@ hi! link Function GruvboxAqua
 " Generic preprocessor
 hi! link PreProc GruvboxAqua
 " Preprocessor #include
-hi! link Include GruvboxAqua
+"hi! link Include GruvboxAqua
+hi! link Include GruvboxPurple
 " Preprocessor #define
 hi! link Define GruvboxAqua
 " Same as Define
@@ -940,19 +947,25 @@ hi! link diffLine GruvboxBlue
 " }}}
 " Html: {{{
 
-hi! link htmlTag GruvboxBlue
-hi! link htmlEndTag GruvboxBlue
+"hi! link htmlTag GruvboxBlue
+"hi! link htmlEndTag GruvboxBlue
+hi! link htmlTag GruvboxGray
+hi! link htmlEndTag GruvboxGray
 
-hi! link htmlTagName GruvboxAquaBold
-hi! link htmlArg GruvboxAqua
+"hi! link htmlTagName GruvboxAquaBold
+hi! link htmlTagName GruvboxOrange
+"hi! link htmlArg GruvboxAqua
+hi! link htmlArg GruvboxYellow
 
-hi! link htmlScriptTag GruvboxPurple
+"hi! link htmlScriptTag GruvboxPurple
+hi! link htmlScriptTag GruvboxGray
 hi! link htmlTagN GruvboxFg1
 hi! link htmlSpecialTagName GruvboxAquaBold
 
 call s:HL('htmlLink', s:fg4, s:none, s:underline)
 
-hi! link htmlSpecialChar GruvboxOrange
+"hi! link htmlSpecialChar GruvboxOrange
+hi! link htmlSpecialChar GruvboxYellow
 
 call s:HL('htmlBold', s:vim_fg, s:vim_bg, s:bold)
 call s:HL('htmlBoldUnderline', s:vim_fg, s:vim_bg, s:bold . s:underline)
@@ -1110,7 +1123,8 @@ hi! link javaScriptParens GruvboxFg3
 
 hi! link javascriptImport GruvboxAqua
 hi! link javascriptExport GruvboxAqua
-hi! link javascriptClassKeyword GruvboxAqua
+"hi! link javascriptClassKeyword GruvboxAqua
+hi! link javascriptClassKeyword GruvboxOrange
 hi! link javascriptClassExtends GruvboxAqua
 hi! link javascriptDefault GruvboxAqua
 
@@ -1173,7 +1187,8 @@ hi! link javascriptObjectLabel GruvboxFg1
 hi! link javascriptPropertyName GruvboxFg1
 
 hi! link javascriptLogicSymbols GruvboxFg1
-hi! link javascriptArrowFunc GruvboxYellow
+"hi! link javascriptArrowFunc GruvboxYellow
+hi! link javascriptArrowFunc GruvboxOrangeBold
 
 hi! link javascriptDocParamName GruvboxFg4
 hi! link javascriptDocTags GruvboxFg4
@@ -1196,9 +1211,12 @@ hi! link javascriptAwaitFuncKeyword GruvboxPurple
 " }}}
 " PanglossJS: {{{
 
-hi! link jsClassKeyword GruvboxAqua
-hi! link jsExtendsKeyword GruvboxAqua
-hi! link jsExportDefault GruvboxAqua
+"hi! link jsClassKeyword GruvboxAqua
+hi! link jsClassKeyword GruvboxOrange
+"hi! link jsExtendsKeyword GruvboxAqua
+hi! link jsExtendsKeyword GruvboxPurpleItalic
+"hi! link jsExportDefault GruvboxAqua
+hi! link jsExportDefault GruvboxPurple
 hi! link jsTemplateBraces GruvboxAqua
 hi! link jsGlobalNodeObjects GruvboxFg1
 hi! link jsGlobalObjects GruvboxFg1
@@ -1207,7 +1225,36 @@ hi! link jsFuncParens GruvboxFg3
 hi! link jsParens GruvboxFg3
 hi! link jsNull GruvboxPurple
 hi! link jsUndefined GruvboxPurple
-hi! link jsClassDefinition GruvboxYellow
+"hi! link jsClassDefinition GruvboxYellow
+hi! link jsClassDefinition GruvboxBlue
+
+" Javascript: {{{
+
+hi! link jsArrowFunction GruvboxOrangeBold
+hi! link jsFrom GruvboxPurpleItalic
+hi! link jsImport GruvboxPurpleItalic
+hi! link jsImport GruvboxPurpleItalic
+hi! link jsExport GruvboxPurpleItalic
+hi! link jsClassProperty GruvboxAqua
+hi! link jsClassFuncName GruvboxAqua
+hi! link jsFuncParens GruvboxAqua
+hi! link jsSuper GruvboxOrangeItalic
+hi! link jsThis GruvboxOrangeItalic
+hi! link jsNull GruvboxRed
+hi! link jsFuncArgs GruvboxFg1Bold
+hi! link jsArrowFuncArgs GruvboxFg1Bold
+hi! link jsReturn GruvboxPurpleBold
+
+" }}}
+
+" JSX: {{{
+
+hi! link jsxTagName GruvboxOrange
+hi! link jsxComponentName GruvboxBlue
+hi! link jsxBraces GruvboxBlue
+
+" }}}
+
 
 " }}}
 " TypeScript: {{{
@@ -1215,7 +1262,8 @@ hi! link jsClassDefinition GruvboxYellow
 hi! link typeScriptReserved GruvboxAqua
 hi! link typeScriptLabel GruvboxAqua
 hi! link typeScriptFuncKeyword GruvboxAqua
-hi! link typeScriptIdentifier GruvboxOrange
+"hi! link typeScriptIdentifier GruvboxOrange
+hi! link typeScriptIdentifier GruvboxOrangeItalic
 hi! link typeScriptBraces GruvboxFg1
 hi! link typeScriptEndColons GruvboxFg1
 hi! link typeScriptDOMObjects GruvboxFg1
@@ -1230,6 +1278,26 @@ hi! link typeScriptOpSymbols GruvboxFg3
 hi! link typeScriptHtmlElemProperties GruvboxFg1
 hi! link typeScriptNull GruvboxPurple
 hi! link typeScriptInterpolationDelimiter GruvboxAqua
+
+hi! link typescriptImport GruvboxPurpleItalic
+hi! link typescriptExport GruvboxPurpleItalic
+hi! link typescriptClassExtends GruvboxPurpleItalic
+hi! link typescriptAccessibilityModifier GruvboxPurpleItalic
+hi! link typescriptDecorator GruvboxAqua
+hi! link typescriptClassKeyword GruvboxOrange
+hi! link typescriptClassHeritage GruvboxAquaItalic
+hi! link typescriptClassName GruvboxBlue
+hi! link typescriptMember GruvboxFg1
+hi! link typescriptPredefinedType GruvboxFg2Italic
+hi! link typescriptTypeReference GruvboxFg2
+hi! link typescriptCall GruvboxFg1Bold
+hi! link typescriptArrowFuncArg GruvboxFg1Bold
+hi! link typescriptURLUtilsProp GruvboxAqua
+hi! link typescriptArrowFunc GruvboxOrangeBold
+hi! link typescriptVariable GruvboxOrange
+hi! link typescriptVariableDeclaration GruvboxYellow
+hi! link typescriptGlobal GruvboxBlue
+
 
 " }}}
 " PureScript: {{{
