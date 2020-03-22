@@ -52,5 +52,5 @@ if exists('g:lightline-fork')
   let s:p.normal.error = [ [ s:bg0, s:orange ] ]
   let s:p.normal.warning = [ [ s:bg2, s:yellow ] ]
 
-  let g:lightline#colorscheme#gruvbox#palette = lightline#colorscheme#flatten(s:p)
+  let g:lightline#colorscheme#gruvbox-fork#palette = lightline#colorscheme#flatten(s:p)
 endif
