@@ -11,7 +11,7 @@ function! s:getGruvColor(group)
   return [ guiColor, termColor ]
 endfunction
 
-if exists('g:lightline')
+if exists('g:lightline-fork')
 
   let s:bg0  = s:getGruvColor('GruvboxBg0')
   let s:bg1  = s:getGruvColor('GruvboxBg1')
