@@ -1296,6 +1296,7 @@ hi! link typescriptArrowFunc GruvboxOrangeBold
 hi! link typescriptVariable GruvboxOrange
 hi! link typescriptVariableDeclaration GruvboxYellow
 hi! link typescriptGlobal GruvboxBlue
+hi! link typescriptCastKeyword GruvboxPurpleItalic
 
 
 " }}}
