@@ -1,9 +1,8 @@
 " -----------------------------------------------------------------------------
-" File: gruvbox.vim
+" File: gruvbox-fork.vim
 " Description: Gruvbox colorscheme for Lightline (itchyny/lightline.vim)
 " Author: gmoe <me@griffinmoe.com>
 " Source: https://github.com/morhetz/gruvbox
-" Last Modified: 20 Sep 2017
 " -----------------------------------------------------------------------------
 
 function! s:getGruvColor(group)

@@ -1,9 +1,8 @@
 " -----------------------------------------------------------------------------
-" File: gruvbox.vim
+" File: gruvbox-fork.vim
 " Description: Retro groove color scheme for Airline
 " Author: morhetz <morhetz@gmail.com>
 " Source: https://github.com/morhetz/gruvbox
-" Last Modified: 12 Aug 2017
 " -----------------------------------------------------------------------------
 
 let g:airline#themes#gruvbox#palette = {}
