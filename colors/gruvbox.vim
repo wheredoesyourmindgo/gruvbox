@@ -578,24 +578,31 @@ call s:HL('Todo', s:vim_fg, s:vim_bg, s:bold . s:italic)
 call s:HL('Error', s:red, s:vim_bg, s:bold . s:inverse)
 
 " Generic statement
-hi! link Statement GruvboxRed
+"hi! link Statement GruvboxRed
+hi! link Statement GruvboxPurple
 " if, then, else, endif, swicth, etc.
-hi! link Conditional GruvboxRed
+"hi! link Conditional GruvboxRed
+hi! link Conditional GruvboxPurple
 " for, do, while, etc.
-hi! link Repeat GruvboxRed
+"hi! link Repeat GruvboxRed
+hi! link Repeat GruvboxPurple
 " case, default, etc.
-hi! link Label GruvboxRed
+"hi! link Label GruvboxRed
+hi! link Label GruvboxPurple
 " try, catch, throw
 hi! link Exception GruvboxRed
 " sizeof, "+", "*", etc.
-hi! link Operator Normal
+"hi! link Operator Normal
+hi! link Operator GruvboxPurple
 " Any other keyword
-hi! link Keyword GruvboxRed
+"hi! link Keyword GruvboxRed
+hi! link Keyword GruvboxPurple
 
 " Variable name
 hi! link Identifier GruvboxBlue
 " Function name
-hi! link Function GruvboxGreenBold
+"hi! link Function GruvboxGreenBold
+hi! link Function GruvboxAqua
 
 " Generic preprocessor
 hi! link PreProc GruvboxAqua
@@ -619,11 +626,14 @@ else
   call s:HL('String',  s:fg1, s:bg1, s:italicize_strings)
 endif
 " Boolean constant: TRUE, false
-hi! link Boolean GruvboxPurple
+"hi! link Boolean GruvboxPurple
+hi! link Boolean GruvboxRed
 " Number constant: 234, 0xff
-hi! link Number GruvboxPurple
+"hi! link Number GruvboxPurple
+hi! link Number GruvboxRed
 " Floating point constant: 2.3e10
-hi! link Float GruvboxPurple
+"hi! link Float GruvboxPurple
+hi! link Float GruvboxRed
 
 " Generic type
 hi! link Type GruvboxYellow
