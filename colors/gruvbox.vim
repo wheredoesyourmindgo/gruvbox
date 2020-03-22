@@ -1090,9 +1090,9 @@ hi! link javaScriptFunction GruvboxAqua
 hi! link javaScriptIdentifier GruvboxRed
 hi! link javaScriptMember GruvboxBlue
 "hi! link javaScriptNumber GruvboxPurple
-hi! link javaScriptNumber GruvboxRed " P -> R.
+hi! link javaScriptNumber GruvboxRed 
 "hi! link javaScriptNull GruvboxPurple
-hi! link javaScriptNull GruvboxRed " P -> R.
+hi! link javaScriptNull GruvboxRed 
 hi! link javaScriptParens GruvboxFg3
 
 " }}}
@@ -1146,11 +1146,11 @@ hi! link javascriptClassStatic GruvboxOrange
 "hi! link javascriptYield GruvboxRed
 "hi! link javascriptExceptions GruvboxRed
 "hi! link javascriptMessage GruvboxRed
-hi! link javascriptOperator GruvboxPurple " R -> P.
-hi! link javascriptForOperator GruvboxPurple " R -> P.
-hi! link javascriptYield GruvboxPurple " R -> P.
-hi! link javascriptExceptions GruvboxPurple " R -> P.
-hi! link javascriptMessage GruvboxPurple " R -> P.
+hi! link javascriptOperator GruvboxPurple
+hi! link javascriptForOperator GruvboxPurple
+hi! link javascriptYield GruvboxPurple
+hi! link javascriptExceptions GruvboxPurple
+hi! link javascriptMessage GruvboxPurple
 
 hi! link javascriptTemplateSB GruvboxAqua
 hi! link javascriptTemplateSubstitution GruvboxFg1
@@ -1180,8 +1180,8 @@ hi! link javascriptHeadersMethod GruvboxFg1
 
 "hi! link javascriptAsyncFuncKeyword GruvboxRed
 "hi! link javascriptAwaitFuncKeyword GruvboxRed
-hi! link javascriptAsyncFuncKeyword GruvboxPurple " R -> P.
-hi! link javascriptAwaitFuncKeyword GruvboxPurple " R -> P.
+hi! link javascriptAsyncFuncKeyword GruvboxPurple
+hi! link javascriptAwaitFuncKeyword GruvboxPurple
 
 " }}}
 " PanglossJS: {{{
