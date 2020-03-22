@@ -1,9 +1,8 @@
 " -----------------------------------------------------------------------------
-" File: gruvbox.vim
+" File: gruvbox-fork.vim
 " Description: Retro groove color scheme for Vim
 " Author: morhetz <morhetz@gmail.com>
 " Source: https://github.com/morhetz/gruvbox
-" Last Modified: 09 Apr 2014
 " -----------------------------------------------------------------------------
 
 function! gruvbox#invert_signs_toggle()
@@ -13,7 +12,7 @@ function! gruvbox#invert_signs_toggle()
     let g:gruvbox_invert_signs=0
   endif
 
-  colorscheme gruvbox
+  colorscheme gruvbox-fork
 endfunction
 
 " Search Highlighting {{{
