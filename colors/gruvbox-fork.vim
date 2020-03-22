@@ -1251,6 +1251,7 @@ hi! link jsReturn GruvboxPurpleBold
 hi! link jsxTagName GruvboxOrange
 hi! link jsxComponentName GruvboxBlue
 hi! link jsxBraces GruvboxBlue
+hi! link jsxEqual GruvboxPurpleBold
 
 " }}}
 
@@ -1297,6 +1298,8 @@ hi! link typescriptVariable GruvboxOrange
 hi! link typescriptVariableDeclaration GruvboxYellow
 hi! link typescriptGlobal GruvboxBlue
 hi! link typescriptCastKeyword GruvboxPurpleItalic
+hi! link typescriptStatementKeyword GruvboxPurpleBold
+hi! link typescriptTernaryOp GruvboxPurpleBold
 
 
 " }}}
